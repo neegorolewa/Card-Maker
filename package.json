@@ -1,0 +1,11 @@
+{
+  "name": "Card-Maker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "http://github.com/neegorolewa/Card-Maker.git",
+  "author": "Gabdrakhmanov Evgeniy <cullofdute19762005@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
