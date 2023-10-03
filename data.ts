@@ -1,6 +1,6 @@
 type Color = string;
 
-type Filter = 'grey' | 'red' | 'green' | 'blue' | null;
+type Filter = "grey" | "red" | "green" | "blue" | null;
 
 type Size = {
   width: number;
@@ -11,7 +11,6 @@ type Position = {
   x: number;
   y: number;
 };
-
 
 type Block = {
   id: string;
@@ -35,29 +34,29 @@ type Char = {
   bold: boolean;
 };
 
-type Figure = 'rectangle' | 'ellipse' | 'circle';
+type Figure = "rectangle" | "ellipse" | "circle";
 
 type TextBlock = Block & {
-  type: 'text';
+  type: "text";
   chars: Array<Char>;
 };
 
 type ImageBlock = Block & {
-  type: 'image';
+  type: "image";
   data: string;
 };
 
 type GraphicBlock = Block & {
-  type: 'graphic'; 
+  type: "graphic";
   color: Color;
   form: Figure;
 };
 
 type Operation = {
   id: string;
-}
+};
 
-type HistoryOperations = Array<Operation>; 
+type HistoryOperations = Array<Operation>;
 
 type Docum = {
   pages: Canvas;
@@ -78,4 +77,4 @@ export type {
   Operation,
   HistoryOperations,
   Docum,
-}
+};
