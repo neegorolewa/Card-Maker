@@ -14,5 +14,5 @@ const canvas: Canvas = {
 };
 
 const doc: Docum = {
-  pages: canvas,
+  page: canvas,
 };

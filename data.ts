@@ -34,7 +34,7 @@ type Char = {
   bold: boolean;
 };
 
-type Figure = "rectangle" | "ellipse" | "circle";
+type Figure = "rectangle" | "ellipse" | "circle" | "triangle";
 
 type TextBlock = Block & {
   type: "text";
@@ -53,13 +53,14 @@ type GraphicBlock = Block & {
 };
 
 type Operation = {
-  id: string;
+  id: number;
+  type: "create" | "delete";
 };
 
 type HistoryOperations = Array<Operation>;
 
 type Docum = {
-  pages: Canvas;
+  page: Canvas;
 };
 
 export type {

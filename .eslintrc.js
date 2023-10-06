@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
     "prettier",
     "plugin:prettier/recommended",
   ],
@@ -29,7 +28,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ["@typescript-eslint", "react", "prettier"],
+  plugins: ["@typescript-eslint", "prettier"],
   rules: {
     "prettier/prettier": "error",
   },

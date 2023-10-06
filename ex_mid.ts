@@ -83,5 +83,5 @@ const canvas2: Canvas = {
 };
 
 const doc: Docum = {
-  pages: canvas2,
+  page: canvas2,
 };
