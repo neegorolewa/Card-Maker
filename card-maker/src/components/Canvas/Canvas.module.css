@@ -1,0 +1,5 @@
+.canvas {
+    border: 10px dashed rgb(211, 208, 19);
+    border-radius: 10px;
+    position: relative;
+}
