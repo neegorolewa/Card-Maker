@@ -2,17 +2,66 @@
     width: 100vw;
     height: 100vh;
     background-color: #FCE9D5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .app_name {
     font-size: 40px;
     font-family: Courier, monospace;
-    font-weight: 1000;
+    font-weight: bolder;
     color: #000000;
-    padding: 0;
-    margin: 0 0 30px;
+    padding-top: 15px;
+    margin: 0 0 15px 15px;
+}
+
+.dropbtn {
+    background-color: #24cbd1;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    padding: 20px;
+    margin: 0 0 0 15px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающей контент (по умолчанию скрыт) */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    padding-left: 29px;
+    min-width: 100%;
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown_content a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменить цвет выпадающих ссылок при наведении */
+.dropdown_content a:hover {background-color: #f1f1f1}
+
+/* Показать выпадающее меню при наведении */
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+/* Изменить цвет фона выпадающего кнопка при отображении выпадающего списка */
+.dropdown:hover .dropbtn {
+    background-color: #79da1e;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
 }
