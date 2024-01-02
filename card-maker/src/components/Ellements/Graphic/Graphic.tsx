@@ -1,4 +1,4 @@
-import { Figure, Position } from "../../../data/data";
+import { Figure } from "../../../data/data";
 
 type GraphicProps = {
   form: Figure;

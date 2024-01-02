@@ -1,0 +1,24 @@
+.selectColor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+  }
+  
+  .colorLabel {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 2px #000 solid;
+  }
+  
+  .checkedColorCheckbox {
+    box-shadow: 0 0 0 4px #00bfff;
+  }
+  
+  .menuText {
+    max-height: 70px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+  }

@@ -8,6 +8,8 @@ type CharProps = {
   fontFamily: string;
   color: Color;
   bold: boolean;
+  italic: boolean;
+  underlined: boolean;
 };
 
 function Char(props: CharProps) {
@@ -16,6 +18,8 @@ function Char(props: CharProps) {
     fontSize: props.fontSize,
     color: props.color,
     fontWeight: props.bold ? "bold" : "normal",
+    textDecoration: props.underlined ? "underlined" : "none",
+    fontStyle: props.italic ? "italic" : "normal",
   };
 
   return <span style={style}>{props.value}</span>;

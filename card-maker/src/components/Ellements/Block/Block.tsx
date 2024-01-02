@@ -1,6 +1,5 @@
 import { CSSProperties } from "react";
 import { GraphicBlock, TextBlock, ImageBlock } from "../../../data/data";
-//import Char from "../Char/Char";
 import Graphic from "../Graphic/Graphic";
 import Image from "../Image/Image";
 import Text from "../Text/Text";
@@ -13,8 +12,8 @@ type BlockProps = {
 function isText(object: BlockProps["object"]): object is TextBlock {
   return (
     object.type === "text" &&
-    typeof object.chars === "object" &&
-    object.chars !== null
+    typeof object.data === "string" &&
+    object.data !== null
   );
 }
 
@@ -45,7 +44,7 @@ function Block(props: BlockProps) {
 
   return (
     <div style={style} className={styles.block}>
-      {isText(object) && <Text text={object.chars} />}
+      {isText(object) && <Text text={object} />}
       {isImage(object) && (
         <Image
           src={object.data}

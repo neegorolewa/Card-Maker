@@ -27,6 +27,8 @@ const ch1: Char = {
   fontFamily: "Font-serif",
   color: "#123456",
   bold: false,
+  italic: true,
+  underlined: true,
 };
 
 const ch2: Char = {
@@ -36,6 +38,8 @@ const ch2: Char = {
   fontFamily: "Arial",
   color: "#696969",
   bold: false,
+  italic: true,
+  underlined: true,
 };
 
 const pos1: Position = {
@@ -52,7 +56,13 @@ const block1: Block = {
 const text: TextBlock = {
   ...block1,
   type: "text",
-  chars: [ch1, ch2],
+  data: "2 тест",
+  fontSize: 20,
+  fontFamily: "Arial",
+  color: "black",
+  bold: true,
+  italic: false,
+  underlined: true,
 };
 
 const size2: Size = {

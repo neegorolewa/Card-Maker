@@ -33,13 +33,21 @@ type Char = {
   fontFamily: string;
   color: string;
   bold: boolean;
+  italic: boolean;
+  underlined: boolean;
 };
 
 type Figure = "rectangle" | "ellipse" | "circle" | "triangle";
 
 type TextBlock = Block & {
   type: "text";
-  chars: Array<Char>;
+  data: string;
+  fontSize: number;
+  fontFamily: string;
+  color: string;
+  bold: boolean;
+  italic: boolean;
+  underlined: boolean;
 };
 
 type ImageBlock = Block & {

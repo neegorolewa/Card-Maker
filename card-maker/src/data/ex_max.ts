@@ -29,6 +29,8 @@ const ch1: Char = {
   fontFamily: "Font",
   color: "#111111",
   bold: false,
+  italic: true,
+  underlined: true,
 };
 
 const ch2: Char = {
@@ -38,6 +40,8 @@ const ch2: Char = {
   fontFamily: "Font",
   color: "#111111",
   bold: false,
+  italic: true,
+  underlined: true,
 };
 
 const pos1: Position = {
@@ -54,7 +58,13 @@ const block1: Block = {
 const text: TextBlock = {
   ...block1,
   type: "text",
-  chars: [ch1, ch2],
+  data: "Москва",
+  fontSize: 40,
+  fontFamily: "Calibri",
+  color: "green",
+  bold: true,
+  italic: false,
+  underlined: true,
 };
 
 const size2: Size = {
